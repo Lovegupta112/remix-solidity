@@ -11,7 +11,7 @@ contract PersonContract{
     }
 
     Person public person;
-
+    
     function setPerson(string memory _name,uint8 _age,address _addr) public {
         person.name=_name;
         person.age=_age;
