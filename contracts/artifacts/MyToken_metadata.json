@@ -1,69 +1,24 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_initialValue",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "add",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					}
-				],
-				"name": "callYourName",
-				"outputs": [
-					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"name": "divide",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getValue",
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -78,11 +33,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_value",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "muliply",
+				"name": "mint",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -90,12 +45,61 @@
 			{
 				"inputs": [
 					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
 						"internalType": "uint256",
-						"name": "_value",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "subtract",
+				"name": "mintTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -114,9 +118,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Calculator.sol": "Calculator"
+			"contracts/MyToken.sol": "MyToken"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -128,12 +132,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Calculator.sol": {
-			"keccak256": "0xf84ad3829a2f770493c52c6d1f7e7a5f853b27f357271c3fac3357af029ac49b",
+		"contracts/MyToken.sol": {
+			"keccak256": "0x28fb894289492e3b9606a827d4cf72424fe375f2b45229990ed3fe2a065b09bb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://830fb5cfba648f2137ef9d3b9082498fcbda27d003ce039aa67b89cd47cc151f",
-				"dweb:/ipfs/QmSh7dNesCczu7ooAZkgpjGBpdBV97mvD7kiiejwGwpS8W"
+				"bzz-raw://709667638a4525aa7ae8335a1fbaf7db98da1e1b621f104c2192c88cadf8313d",
+				"dweb:/ipfs/Qme63PSFsbo8PvhZmtopah9R7tofVy1PNDieTr7sGsTX65"
 			]
 		}
 	},
